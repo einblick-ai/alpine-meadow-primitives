@@ -59,7 +59,7 @@ class SKLearnPrimitive(BasePrimitive):
     def produce_proba(self, inputs):
         if hasattr(self.primitive, "predict_proba"):
             return pd.DataFrame(self.primitive.predict_proba(inputs), columns=self.primitive.classes_)
-        raise RuntimeError("{} cannot predict probabilities!".format(self.primitive))
+        raise RuntimeError(f"{self.primitive} cannot predict probabilities!")
 
     def __repr__(self):
         return self.primitive.__repr__()
