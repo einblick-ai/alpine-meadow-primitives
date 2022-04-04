@@ -3,7 +3,7 @@
 import numpy as np
 from sklearn.metrics import precision_recall_curve
 
-from .base import BasePrimitive
+from alpine_meadow.primitives.base import BasePrimitive
 
 
 class ThresholdingPrimitive(BasePrimitive):

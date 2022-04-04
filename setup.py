@@ -1,8 +1,8 @@
 import os
-from setuptools import setup, find_namespace_packages
+from setuptools import setup, find_packages
 
 
-packages = find_namespace_packages(where='.', include=['alpine_meadow.*'])
+packages = find_packages(where='.')
 with open('requirements.txt') as f:
     install_requires = [r.rstrip() for r in f.readlines()
                         if not r.startswith('#') and not r.startswith('git+')]
