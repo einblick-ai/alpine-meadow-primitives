@@ -1,0 +1,32 @@
+# Python
+# ========================
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# virtualenv
+.env/*
+
+# pyenv
+.python-version
+
+# package
+alpine_meadow_primitives.egg-info/*
+build/*
+dist/*
+
+# log
+*.log
+
+# mac
+.DS_Store
+
+# IDE
+.idea/*
+
+# catboost
+catboost_info/
+
+# Profiling
+*.lprof
