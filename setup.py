@@ -5,7 +5,7 @@ from setuptools import setup, find_packages
 packages = find_packages(where='.')
 with open('requirements.txt') as f:
     install_requires = [r.rstrip() for r in f.readlines()
-                        if not r.startswith('#') and not r.startswith('git+')]
+                        if not r.startswith('#') and r.rstrip()]
 
 
 with open(os.path.join(
@@ -21,7 +21,7 @@ with open(os.path.join(
 
 setup(
     name='alpine-meadow-primitives',
-    author='Zeyuan Shang',
+    author='Einblick Analytics',
     author_email='zs@einblick.ai',
     description='Einblick ML primitives',
     version=VERSION,
