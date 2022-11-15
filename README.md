@@ -8,3 +8,9 @@ This repostitory contains the essential libraries for running ML pipelines gener
 pip install -r requirements.txt
 python setup.py install
 ```
+
+**Inline with Magic Functions**
+You can use this with Einblick Python cells
+```python
+!pip install alpine_meadow.primitives@git+https://gitlab.com/einblick/alpine-meadow-primitives.git#egg=alpine_meadow.primitives
+```
